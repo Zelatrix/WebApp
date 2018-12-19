@@ -1,0 +1,64 @@
+<html>
+<head>
+    Web App <br> <br>
+
+    <script>
+    var distance;
+    var current;
+    var remaining 
+        
+        function distFunc()
+        {
+        var distance = document.getElementsByName('distance').value;
+        var current = document.getElementsByName('current').value;
+        var remaining = var distance - var current;
+            if(distance < 0)
+            {
+                distance.onSubmit console.log(remaining);
+            }   
+        }
+        
+        function checkNegativeValue()
+        {
+          var distance = parseFloat(document.getElementByName("distance").value);
+          if(distance < 0)
+          {
+            distance.onSubmit alert("Negative Value is not allowed");
+            return false;
+          }
+        }
+        
+          if(distance > 0)
+          {
+           var name = document.getElementById('distance').value;
+           console.log(distFunc());
+          }
+        
+          document.getElementByName("output").value;
+        </script>
+
+</head>
+<body>
+<style>
+.container 
+{
+  width: 200px;
+  clear: both;
+}
+
+.container input 
+{
+  width: 100%;
+  clear: both;
+}
+</style>
+    
+<div class="container">
+    <label for="">How Far To Travel: </label><input type=number name="travel"> <br> <br>
+    <label for="">Distance Travelled: </label><input type=number name="dist"> <br> <br>
+    <label for="output">Remaining Distance: </label><input type="number" name="output"><br> <br>
+    <input type=submit value="Submit">
+</div>
+    
+</body>
+</html>
